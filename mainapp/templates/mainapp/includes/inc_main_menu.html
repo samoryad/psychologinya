@@ -1,0 +1,5 @@
+<ul class="menu">
+    <li><a href="{% url "main" %}" {% if request.resolver_match.url_name == 'main'%}class="active"{% endif %}>главная</a></li>
+    <li><a href="{% url "specialists" %}" {% if request.resolver_match.url_name == 'specialists'%}class="active"{% endif %}>наши специалисты</a></li>
+    <li><a href="{% url "contacts" %}" {% if request.resolver_match.url_name == 'contacts'%}class="active"{% endif %}>контакты</a></li>
+</ul>

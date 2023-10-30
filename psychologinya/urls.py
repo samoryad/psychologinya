@@ -18,8 +18,15 @@ from django.urls import path
 from mainapp import views as mainapp
 
 urlpatterns = [
-    path('', mainapp.main),
-    path('specialists/', mainapp.specialists),
-    path('contacts/', mainapp.contacts),
+    path('', mainapp.main, name='main'),
+
+    path('specialists/', mainapp.specialists, name='specialists'),
+    path('specialists/all/', mainapp.specialists_all, name='specialists_all'),
+    path('specialists/svetlana/', mainapp.specialists_svetlana, name='specialists_svetlana'),
+    path('specialists/mariya/', mainapp.specialists_mariya, name='specialists_mariya'),
+    path('specialists/lidiya/', mainapp.specialists_lidiya, name='specialists_lidiya'),
+    path('specialists/anastasiya/', mainapp.specialists_anastasiya, name='specialists_anastasiya'),
+
+    path('contacts/', mainapp.contacts, name='contacts'),
     path('admin/', admin.site.urls),
 ]
