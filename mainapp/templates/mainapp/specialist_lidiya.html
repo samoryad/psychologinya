@@ -1,0 +1,36 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block menu %}
+        <div class="header">
+            <a href="{% url "main" %}" class="logo"></a>
+            {% include 'mainapp/includes/inc_main_menu.html' %}
+            <a href="#" class="search"></a>
+        </div>
+{% endblock %}
+
+{% block content %}
+    <div class="details">
+        <div class="links">
+            {% include 'mainapp/includes/inc_specialists_menu.html' %}
+        </div>
+        <div class="specialist_content">
+            <div class="specialist_block">
+                <img class="specialist_photo" src="{% static 'img/lidiya_photo.jpg' %}" alt="Lidiya">
+                <div class="specialist_text">
+                    КОМАРОВА ЛИДИЯ ВЛАДИМИРОВНА
+                    8 (916) 071-88-20
+                    Психолог по работе с взрослыми, нутрициолог
+                    проблемы с отношением к себе, самооценка
+                    • сложности в отношениях с людьми (с партнером, родителями и другими людьми)
+                    • беспокоят чувства и эмоции
+                    • помощь при страхах и тревожных состояниях
+                    • недостаток сил и энергии
+                    • проблемы в карьере и отношениях из-за лишнего веса
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

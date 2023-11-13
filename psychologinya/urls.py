@@ -22,10 +22,10 @@ urlpatterns = [
 
     path('specialists/', mainapp.specialists, name='specialists'),
     path('specialists/all/', mainapp.specialists_all, name='specialists_all'),
-    path('specialists/svetlana/', mainapp.specialists_svetlana, name='specialists_svetlana'),
-    path('specialists/mariya/', mainapp.specialists_mariya, name='specialists_mariya'),
-    path('specialists/lidiya/', mainapp.specialists_lidiya, name='specialists_lidiya'),
-    path('specialists/anastasiya/', mainapp.specialists_anastasiya, name='specialists_anastasiya'),
+    path('specialist/svetlana/', mainapp.specialist_svetlana, name='specialist_svetlana'),
+    path('specialist/mariya/', mainapp.specialist_mariya, name='specialist_mariya'),
+    path('specialist/lidiya/', mainapp.specialist_lidiya, name='specialist_lidiya'),
+    path('specialist/anastasiya/', mainapp.specialist_anastasiya, name='specialist_anastasiya'),
 
     path('contacts/', mainapp.contacts, name='contacts'),
     path('admin/', admin.site.urls),

@@ -11,10 +11,10 @@ def main(request):
 def specialists(request):
     links_menu = [
         {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
     ]
     content = {
         'title': 'специалисты',
@@ -33,10 +33,10 @@ def contacts(request):
 def specialists_all(request):
     links_menu = [
         {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
     ]
     content = {
         'title': 'специалисты',
@@ -45,13 +45,28 @@ def specialists_all(request):
     return render(request, 'mainapp/specialists.html', content)
 
 
-def specialists_svetlana(request):
+def specialist_svetlana(request):
     links_menu = [
         {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
+    ]
+    content = {
+        'title': 'специалисты',
+        'links_menu': links_menu,
+    }
+    return render(request, 'mainapp/specialist_svetlana.html', content)
+
+
+def specialist_mariya(request):
+    links_menu = [
+        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
     ]
     content = {
         'title': 'специалисты',
@@ -60,43 +75,28 @@ def specialists_svetlana(request):
     return render(request, 'mainapp/specialists.html', content)
 
 
-def specialists_mariya(request):
+def specialist_lidiya(request):
     links_menu = [
         {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
     ]
     content = {
         'title': 'специалисты',
         'links_menu': links_menu,
     }
-    return render(request, 'mainapp/specialists.html', content)
+    return render(request, 'mainapp/specialist_lidiya.html', content)
 
 
-def specialists_lidiya(request):
+def specialist_anastasiya(request):
     links_menu = [
         {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
-    ]
-    content = {
-        'title': 'специалисты',
-        'links_menu': links_menu,
-    }
-    return render(request, 'mainapp/specialists.html', content)
-
-
-def specialists_anastasiya(request):
-    links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
-        {'href': 'specialists_svetlana', 'name': 'Светлана'},
-        {'href': 'specialists_mariya', 'name': 'Мария'},
-        {'href': 'specialists_lidiya', 'name': 'Лидия'},
-        {'href': 'specialists_anastasiya', 'name': 'Анастасия'},
+        {'href': 'specialist_svetlana', 'name': 'Светлана'},
+        {'href': 'specialist_mariya', 'name': 'Мария'},
+        {'href': 'specialist_lidiya', 'name': 'Лидия'},
+        {'href': 'specialist_anastasiya', 'name': 'Анастасия'},
     ]
     content = {
         'title': 'специалисты',

@@ -49,10 +49,10 @@ html, body {
 }
 
 .logo {
-	background-image: url(img/logo_only.jpg);
+	background-image: url(img/logo.png);
 	margin-top: 30px;
-	width: 150px;
-	height: 150px;
+	width: 165px;
+	height: 175px;
 	background-size: cover;
 	float: left;
 }
@@ -1075,4 +1075,23 @@ td:first-child {
 }
 .related-products a:hover .text{
 	display: block;
+}
+
+.specialist_content {
+
+}
+
+.specialist_photo {
+	width: 500px;
+	border:4px solid rgb(11, 186, 181); padding:15px;
+    border-radius: 50px;
+	margin: 50px 20px 50px 20px;
+	/*margin-bottom: 50px;*/
+	/*margin-top: 50px;*/
+}
+
+.specialist_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
