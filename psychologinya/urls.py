@@ -21,7 +21,7 @@ urlpatterns = [
     path('', mainapp.main, name='main'),
 
     path('specialists/', mainapp.specialists, name='specialists'),
-    path('specialists/all/', mainapp.specialists_all, name='specialists_all'),
+    path('specialists/tatyana/', mainapp.specialist_tatyana, name='specialist_tatyana'),
     path('specialist/svetlana/', mainapp.specialist_svetlana, name='specialist_svetlana'),
     path('specialist/mariya/', mainapp.specialist_mariya, name='specialist_mariya'),
     path('specialist/lidiya/', mainapp.specialist_lidiya, name='specialist_lidiya'),

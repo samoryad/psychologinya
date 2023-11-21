@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import resolve
 
 
 def main(request):
@@ -10,7 +11,7 @@ def main(request):
 
 def specialists(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -30,9 +31,9 @@ def contacts(request):
     return render(request, 'mainapp/contact.html', content)
 
 
-def specialists_all(request):
+def specialist_tatyana(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -42,12 +43,12 @@ def specialists_all(request):
         'title': 'специалисты',
         'links_menu': links_menu,
     }
-    return render(request, 'mainapp/specialists.html', content)
+    return render(request, 'mainapp/specialist_tatyana.html', content)
 
 
 def specialist_svetlana(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -62,7 +63,7 @@ def specialist_svetlana(request):
 
 def specialist_mariya(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -72,12 +73,12 @@ def specialist_mariya(request):
         'title': 'специалисты',
         'links_menu': links_menu,
     }
-    return render(request, 'mainapp/specialists.html', content)
+    return render(request, 'mainapp/specialist_mariya.html', content)
 
 
 def specialist_lidiya(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -92,7 +93,7 @@ def specialist_lidiya(request):
 
 def specialist_anastasiya(request):
     links_menu = [
-        {'href': 'specialists_all', 'name': 'Все специалисты'},
+        {'href': 'specialist_tatyana', 'name': 'Татьяна'},
         {'href': 'specialist_svetlana', 'name': 'Светлана'},
         {'href': 'specialist_mariya', 'name': 'Мария'},
         {'href': 'specialist_lidiya', 'name': 'Лидия'},
@@ -102,4 +103,4 @@ def specialist_anastasiya(request):
         'title': 'специалисты',
         'links_menu': links_menu,
     }
-    return render(request, 'mainapp/specialists.html', content)
+    return render(request, 'mainapp/specialist_anastasiya.html', content)
