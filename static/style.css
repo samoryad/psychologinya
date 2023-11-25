@@ -113,11 +113,13 @@ html, body {
 	margin-bottom: 50px;
 	line-height: 24px;
 }
-.main_text {
+.main_block {
 	width: 1200px;
-	height: 500px;
-	text-align: center;
+	height: 600px;
 	color: #018e8a;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .button-order {
@@ -205,9 +207,10 @@ html, body {
 }
 
 .featured {
-	padding-left: 100px;
-	padding-right: 100px;
-	height: 100%;
+	/*padding-left: 100px;*/
+	/*padding-right: 100px;*/
+	/*height: 100%;*/
+	text-align: center;
 }
 .featured-menu {
 	margin-top: 120px;
@@ -312,18 +315,7 @@ html, body {
 	display: block;
 }
 
-.promo-content-1 {
-	background-image: url(img/promo-img1.jpg);
-	width: 683px;
-	height: 683px;
-	float: left;
-}
-.promo-content-2 {
-	background-image: url(img/promo-img2.jpg);
-	width: 683px;
-	height: 683px;
-	float: right;
-}
+
 
 .text-promo {
 	width: 374px;
@@ -424,13 +416,7 @@ html, body {
 	display: block;
 }
 
-.hot-deal {
-	margin-top: 105px;
-	height: 800px;
-	padding-left: 98px;
-	background-image: url(img/slider-hotdeal.jpg);
-	position: relative;
-}
+
 .text-hotDeal {
 	width: 460px;
 	margin-top: 287px;
@@ -453,12 +439,7 @@ html, body {
 	padding-left: 98px;
 	padding-right: 98px;
 }
-.exclusive-big {
-	height: 570px;
-	width: 570px;	
-	float: left;
-	background-image: url(img/product-1-lg.jpg);
-}
+
 .exclusive-small {
 	width: 570px;
 	height: 570px;
@@ -514,13 +495,7 @@ html, body {
 	padding-top: 186px;
 }
 
-.mobile {
-	height: 516px;
-	margin-top: 90px;
-	background-image: url(img/mobile-back.jpg);
-	padding-left: 99px;
-	position: relative;
-}
+
 .text-mobile {
 	width: 450px;
 	margin-top: 125px;
@@ -640,37 +615,6 @@ td:first-child {
 	margin-left: 158px;
 	margin-top: 30px;
 }
-.social1{
-	background: url(img/social-links.png);
-	height: 28px;
-	width: 28px;
-	float: left;
-
-}
-.social2{
-	background: url(img/social-links.png);
-	background-position: -34px 0px;
-	height: 28px;
-	width: 28px;
-	float: left;
-	margin-left: 3px;
-}
-.social3{
-	background: url(img/social-links.png);
-	background-position: -67px 0px;
-	height: 28px;
-	width: 28px;
-	float: left;
-	margin-left: 3px;
-}
-.social4{
-	background: url(img/social-links.png);
-	background-position: -101px 0px;
-	height: 28px;
-	width: 28px;
-	float: left;
-	margin-left: 3px;
-}
 
 .footer .small:nth-child(4) {
 	float: right;
@@ -702,14 +646,19 @@ td:first-child {
 	border: 4px solid rgb(11, 186, 181);
 	padding: 15px;
     border-radius: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* карта контактов*/
 .contacts__map{
-    margin-top: 96px;
-    margin-bottom: 112px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: stretch;
+	border: 4px solid rgb(11, 186, 181);
+	padding: 15px;
+    border-radius: 50px;
 }
 
 .contacts_container {
@@ -1100,8 +1049,6 @@ td:first-child {
 	border:4px solid rgb(11, 186, 181); padding:15px;
     border-radius: 50px;
 	margin: 50px 50px 50px 20px;
-	/*margin-bottom: 50px;*/
-	/*margin-top: 50px;*/
 }
 
 .specialist_block {
@@ -1111,14 +1058,32 @@ td:first-child {
 }
 
 .h2_specialist {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 }
 
 .h3_specialist {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .h4_specialist {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.specialist_ul {
+	list-style-type: none;
+}
+
+.specialist_li {
+	margin-bottom: 15px;
+}
+
+.before_footer {
+	height: 50px;
+}
+
+.main_photo {
+	width: 500px;
+	border:4px solid rgb(11, 186, 181); padding:15px;
+    border-radius: 50px;
 }

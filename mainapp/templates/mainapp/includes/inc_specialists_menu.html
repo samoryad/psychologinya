@@ -1,9 +1,13 @@
 <ul class="links-menu">
     {% for link in links_menu %}
         <li>
-            <a href="{% url link.href %}"
-               {% if request.resolver_match.url_name == link.href %}class="active" {% endif %}
-            >{{ link.name }}</a>
+            <a href="{% url 'specialists:specialist' link.pk %}"
+               {% if request.resolver_match.kwargs.pk|add:'0' == link.pk %}
+               class="active"
+               {% elif request.resolver_match.kwargs.pk|add:'0' == None %}
+               class="active"
+               {% endif %}
+            >{{ link.short_name }}</a>
         </li>
     {% endfor %}
 </ul>

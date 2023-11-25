@@ -16,17 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mainapp import views as mainapp
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls import include
 
 urlpatterns = [
     path('', mainapp.main, name='main'),
-
-    path('specialists/', mainapp.specialists, name='specialists'),
-    path('specialists/tatyana/', mainapp.specialist_tatyana, name='specialist_tatyana'),
-    path('specialist/svetlana/', mainapp.specialist_svetlana, name='specialist_svetlana'),
-    path('specialist/mariya/', mainapp.specialist_mariya, name='specialist_mariya'),
-    path('specialist/lidiya/', mainapp.specialist_lidiya, name='specialist_lidiya'),
-    path('specialist/anastasiya/', mainapp.specialist_anastasiya, name='specialist_anastasiya'),
-
+    path('specialists/', include('mainapp.urls', namespace='specialists')),
     path('contacts/', mainapp.contacts, name='contacts'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
