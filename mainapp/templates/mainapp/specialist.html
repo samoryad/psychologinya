@@ -24,16 +24,9 @@
                     <h4 class="h3_specialist">{{ specialist.profession}}</h4>
                     <h4 class="h4_specialist">Специализация:</h4>
                     <ul class="specialist_ul">
-                        <li class="specialist_li"> {{ specialist.skills01 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills02 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills03 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills04 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills05 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills06 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills07 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills08 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills09 }}</li>
-                        <li class="specialist_li"> {{ specialist.skills10 }}</li>
+                        {% for skill in specialist_skills %}
+                            <li class="specialist_li"> {{ skill }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -42,16 +35,9 @@
         <div class="specialist_text">
             <h4 class="h4_specialist">Образование:</h4>
             <ul class="specialist_ul ">
-                <li class="specialist_li"> {{ specialist.education01 }}</li>
-                <li class="specialist_li"> {{ specialist.education02 }}</li>
-                <li class="specialist_li"> {{ specialist.education03 }}</li>
-                <li class="specialist_li"> {{ specialist.education04 }}</li>
-                <li class="specialist_li"> {{ specialist.education05 }}</li>
-                <li class="specialist_li"> {{ specialist.education06 }}</li>
-                <li class="specialist_li"> {{ specialist.education07 }}</li>
-                <li class="specialist_li"> {{ specialist.education08 }}</li>
-                <li class="specialist_li"> {{ specialist.education09 }}</li>
-                <li class="specialist_li "> {{ specialist.education10 }}</li>
+                {% for education in specialist_education %}
+                    <li class="specialist_li"> {{ education }}</li>
+                {% endfor %}
             </ul>
         </div>
 
