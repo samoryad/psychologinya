@@ -9,41 +9,31 @@
 {% endblock %}
 
 {% block content %}
-
     <div class="details">
-        <div class="links">
-            {% include 'mainapp/includes/inc_specialists_menu.html' %}
-        </div>
-
-        <div class="specialist_content">
-                <div class="specialist_block">
-                    <img class="specialist_photo" src="/media/{{ specialist01.image }}" alt="фото">
-                    <div class="specialist_text">
-                        <h2 class="h2_specialist">{{ specialist01.full_name | title}}</h2>
-                        <h3 class="h3_specialist">{{ specialist01.tel}}</h3>
-                        <h4 class="h3_specialist">{{ specialist01.profession}}</h4>
-                        <h4 class="h4_specialist">Специализация:</h4>
-                        <ul class="specialist_ul">
-                            {% for skill in specialist_skills %}
-                                <li class="specialist_li"> {{ skill }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        {% include 'mainapp/includes/inc_specialists_menu.html' %}
+        <div class="specialist_block">
+            <img class="specialist_photo" src="/media/{{ specialist01.image }}" alt="фото">
             <div class="specialist_text">
-                <h4 class="h4_specialist">Образование:</h4>
-                <ul class="specialist_ul ">
-                    {% for education in specialist_education %}
-                        <li class="specialist_li"> {{ education }}</li>
+                <h2 class="h2_specialist">{{ specialist01.full_name | title}}</h2>
+                <h3 class="h3_specialist">{{ specialist01.tel}}</h3>
+                <h4 class="h3_specialist">{{ specialist01.profession}}</h4>
+                <h4 class="h4_specialist">Специализация:</h4>
+                <ul class="specialist_ul">
+                    {% for skill in specialist_skills %}
+                        <li class="specialist_li"> {{ skill }}</li>
                     {% endfor %}
                 </ul>
             </div>
-
-            <div class="before_footer">
-            </div>
-
+        </div>
+        <div class="specialist_text">
+            <h4 class="h4_specialist">Образование:</h4>
+            <ul class="specialist_ul ">
+                {% for education in specialist_education %}
+                    <li class="specialist_li"> {{ education }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="before_footer"></div>
     </div>
 {% endblock %}
 

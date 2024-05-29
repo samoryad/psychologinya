@@ -19,26 +19,25 @@
 </head>
 <body>
 	<div class="container">
-        {% block menu %}
-        {% endblock %}
+        <div class="container_1200">
+            {% block menu %}
+            {% endblock %}
 
-        {% block content %}
-        {% endblock %}
+            {% block content %}
+            {% endblock %}
 
-	</div>
-
-    {% block footer %}
-    <div class="footer">
-        <div class="container__footer">
-            <hr class="footer_line">
-            <h2 class="h2_footer">Время для себя</h2>
-            <h3 class="h3_footer">г. Дмитров, ул. Профессиональная улица, д. 20 корп. 1, каб. 306</h3>
-            <p class="copyright">Авторское право &copy; Сайт психологического кабинета "Психологиня"</p>
-            <p class="copyright">г Дмитров. {% now 'Y' %} г.</p>
+            {% block footer %}
+            <div class="footer">
+                <div class="container__footer">
+                    <hr class="footer_line">
+                    <h2 class="h2_footer">Время для себя</h2>
+                    <h3 class="h3_footer">г. Дмитров, ул. Профессиональная улица, д. 20 корп. 1, каб. 306</h3>
+                    <p class="copyright">Авторское право &copy; Сайт психологического кабинета "Психологиня"</p>
+                    <p class="copyright">г Дмитров. {% now 'Y' %} г.</p>
+                </div>
+            </div>
+            {% endblock %}
         </div>
-
     </div>
-    {% endblock %}
-
 </body>
 </html>

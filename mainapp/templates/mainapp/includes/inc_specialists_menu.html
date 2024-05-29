@@ -7,7 +7,7 @@
                {% elif request.resolver_match.kwargs.pk|add:'0' == None %}
                class="active"
                {% endif %}
-            >{{ link.short_name }}</a>
+            >{{ link.profession }}</a>
         </li>
     {% endfor %}
 </ul>
